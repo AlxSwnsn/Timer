@@ -1,55 +1,97 @@
 .App {
-  margin: 200px auto auto auto;
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  border: 2px solid black;
-  border-radius: 10px;
+    display: grid;
+    grid-template-areas: "t1 t2";
+}
+
+
+.Clock {
+    grid-area: t1;
+    margin: 200px 30px auto auto;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.Clock2 {
+    grid-area: t2;
+    margin: 200px auto auto 30px;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
 
 .TimerFrame {
-  margin: 10px auto;
-  border:2px solid black;
-  border-radius: 5px;
-  width: 180px;
-  height: 80px;
-  text-align:center;
-  font-size: 70px;
-  padding-bottom: 20px;
-  background-color: aquamarine;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 30px;
+    background-color: aquamarine;
 }
 
 .TimerFrameRed {
-  margin: 10px auto;
-  border:2px solid black;
-  border-radius: 5px;
-  width: 180px;
-  height: 80px;
-  text-align:center;
-  font-size: 70px;
-  padding-bottom: 20px;
-  background-color: aquamarine;
-  color: red;
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 30px;
+    background-color: aquamarine;
+    color: red;
 
 }
 
-.ButtonFrame{
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 180px ;
-  margin: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+.ButtonFrame {
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 180px;
+    height: 60px;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
 }
 
-button{
-  width: 75px;
-  font-size: 20px;
-  border-radius: 5px;
-  background-color: bisque;
+.Button {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 75px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: bisque;
 }
 
+.ValuesFrame {
+    margin: 10px auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 180px;
+    height: 80px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: aquamarine;
+}
 
+.Input {
+    width: 90px;
+    height: 20px;
+}
